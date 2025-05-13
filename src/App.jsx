@@ -3,6 +3,7 @@ import './App.css'
 
 const produtos = [
   {
+    
     nome: 'Cadeira Moderna',
     glb: 'public/models/Chair.glb',
     poster: 'public/thumbnails/Chair.webp'
