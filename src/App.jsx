@@ -3,15 +3,15 @@ import './App.css'
 
 const produtos = [
   {
-    
+
     nome: 'Cadeira Moderna',
-    glb: 'public/models/Chair.glb',
-    poster: 'public/thumbnails/Chair.webp'
+    glb: '/models/Chair.glb',
+    poster: '/thumbnails/Chair.webp'
   },
   {
     nome: 'Cadeira Moderna 2',
-    glb: 'public/models/Chair.glb',
-    poster: 'public/thumbnails/Chair.webp'
+    glb: '/models/Chair.glb',
+    poster: '/thumbnails/Chair.webp'
   }
 ]
 
