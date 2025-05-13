@@ -1,0 +1,41 @@
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h2 {
+  color: black;
+  font-size: 1rem;
+  margin: 12px 0 8px;
+}
+
+.card button {
+  padding: 8px 12px;
+  background-color: #122F3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
