@@ -32,6 +32,8 @@ function ModalViewer ({ produto, onClose }) {
             backgroundColor: '#fff',
             borderRadius: '8px',
             border: 'none',
+            color: '#000',
+            fontSize: '14px',
             padding: '8px 12px',
             position: 'absolute',
             top: '16px',
