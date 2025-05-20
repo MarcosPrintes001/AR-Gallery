@@ -8,10 +8,17 @@
   background-color: #242424;
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegi  bility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+#root, .app {
+  min-height: 100%;
+  background-color: #121212;
+}
+
 
 a {
   font-weight: 500;
@@ -22,13 +29,16 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+
+
+html, body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #121212; /* mesmo fundo do seu app */
 }
+
 
 h1 {
   font-size: 3.2em;
