@@ -9,40 +9,37 @@ function ModalViewer ({ produto, onClose }) {
       <button className='close-button' onClick={onClose}>
         ×
       </button>
-
-      <model-viewer
-        src={produto.glb}
-        ios-src={produto.usdz}
-        poster={produto.poster}
-        shadow-intensity='1'
-        camera-controls
-        auto-rotate
-        ar
-        ar-placement={produto.arPlacement || 'floor'}
-        alt={produto.nome}
-        style={{
-          width: '90%',
-          maxWidth: 600,
-          height: 500
-        }}
-      >
-        <button
-          slot='ar-button'
+      <div className='model-viewer-container'>
+        <model-viewer
+          class='viewer'
+          src={produto.glb}
+          ios-src={produto.usdz}
+          poster={produto.poster}
+          shadow-intensity='1'
+          camera-controls
+          auto-rotate
           style={{
-            backgroundColor: '#fff',
+            width: '90%',
+            backgroundColor: '#000',
             borderRadius: '8px',
             border: 'none',
+            color: '#000',
+            fontSize: '14px',
             padding: '8px 12px',
             position: 'absolute',
-            top: '16px',
-            right: '16px',
-            cursor: 'pointer'
+            top: '16px'
           }}
+          ar
+          ar-placement={produto.arPlacement || 'floor'}
+          alt={produto.nome}
         >
-          👋 Ver em AR
-        </button>
-      </model-viewer>
+          <button slot='ar-button' className='ar-button'>
+            👋 Ver em AR
+          </button>
+        </model-viewer>
+      </div>
     </div>
   )
 }
+
 export default ModalViewer
