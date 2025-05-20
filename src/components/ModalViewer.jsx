@@ -17,6 +17,17 @@ function ModalViewer ({ produto, onClose }) {
           shadow-intensity='1'
           camera-controls
           auto-rotate
+          style={{
+            width: '90%',
+            backgroundColor: '#fff',
+            borderRadius: '8px',
+            border: 'none',
+            color: '#000',
+            fontSize: '14px',
+            padding: '8px 12px',
+            position: 'absolute',
+            top: '16px'
+          }}
           ar
           ar-placement={produto.arPlacement || 'floor'}
           alt={produto.nome}

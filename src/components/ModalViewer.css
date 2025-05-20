@@ -13,11 +13,6 @@
   overflow: auto;
 }
 
-.modal, .card, .model-container {
-  background-color: transparent;
-  box-shadow: none; /* opcional, se quiser remover sombra branca */
-}
-
 
 body {
   background-color: #121212;
