@@ -1,3 +1,36 @@
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.model-viewer-container {
+  width: 90vw;
+  max-width: 700px;
+  height: 80vh;
+  max-height: 700px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
 .close-button {
   position: fixed;
   top: 20px;
@@ -16,38 +49,9 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-
-.close-button:hover {
-  background-color: #eee;
-}
-
-.modal {
+.ar-button {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  padding: 20px; /* ajuda a dar espaçamento interno */
-  box-sizing: border-box;
-  overflow: auto; /* para permitir scroll se for menor que o modelo */
-}
-
-.model-viewer-container model-viewer {
-  width: 100%;
-  max-width: 700px; /* ajuste o máximo que quiser */
-  height: 80vh; /* altura relativa à viewport para evitar corte */
-  max-height: 700px; 
-  border-radius: 8px;
-  background: #fff;
-}
-
-model-viewer::part(ar-button) {
-  position: fixed;
-  top: 20px;
+  top: 70px; /* um pouco abaixo do fechar */
   right: 20px;
   z-index: 10000;
   background: white;
