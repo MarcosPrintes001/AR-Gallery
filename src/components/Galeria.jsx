@@ -1,6 +1,6 @@
 import './Galeria.css'
 
-function Galeria ({ produtos, onSelecionar }) {
+function Galeria({ produtos, onSelecionar }) {
   return (
     <div className='galeria'>
       {produtos.map((produto, index) => (
