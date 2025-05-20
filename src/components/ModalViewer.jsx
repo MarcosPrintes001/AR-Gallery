@@ -17,7 +17,6 @@ function ModalViewer ({ produto, onClose }) {
           shadow-intensity='1'
           camera-controls
           auto-rotate
-          style='background-color: transparent; width: 100%; height: 100%;'
           ar
           ar-placement={produto.arPlacement || 'floor'}
           alt={produto.nome}
