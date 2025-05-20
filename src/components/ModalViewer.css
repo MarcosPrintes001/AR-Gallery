@@ -1,23 +1,30 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
 .close-button {
   position: absolute;
   top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffffcc;
+  left: 20px;
+  background: #fff;
+  color: #000;
   border: none;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  color: #122F3F;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
-  z-index: 11;
-}
-
-.close-button:hover {
-  background-color: #eee;
 }
