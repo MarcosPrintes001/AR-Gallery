@@ -19,19 +19,19 @@ body {
   color: white;
 }
 
-
 .model-viewer-container {
   width: 90vw;
   max-width: 700px;
   height: 80vh;
   max-height: 700px;
-  background: rgba(0, 0, 0, 0.25); /* preto leve translúcido */
+  background: rgba(0, 0, 0, 0.6); /* mais visível e consistente */
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* evita que algo vaze */
+  position: relative;
 }
-
 
 model-viewer.viewer {
   width: 100%;

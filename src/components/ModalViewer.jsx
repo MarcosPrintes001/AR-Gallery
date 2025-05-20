@@ -4,18 +4,14 @@ import './ModalViewer.css'
 function ModalViewer ({ produto, onClose }) {
   const modalRef = useRef(null)
 
-  const handleClickOutside = (e) => {
+  const handleClickOutside = e => {
     if (e.target === modalRef.current) {
       onClose()
     }
   }
 
   return (
-    <div
-      className='modal'
-      ref={modalRef}
-      onClick={handleClickOutside}
-    >
+    <div className='modal' ref={modalRef} onClick={handleClickOutside}>
       <button className='close-button' onClick={onClose}>
         ×
       </button>
@@ -26,8 +22,11 @@ function ModalViewer ({ produto, onClose }) {
           ios-src={produto.usdz}
           poster={produto.poster}
           shadow-intensity='1'
+          camera-controls
+          auto-rotate
           ar
           ar-placement={produto.arPlacement || 'floor'}
+          ar-scale='fixed'
           alt={produto.nome}
         >
           <button slot='ar-button' className='ar-button'>
