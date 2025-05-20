@@ -14,21 +14,12 @@ function ModalViewer ({ produto, onClose }) {
           src={produto.glb}
           ios-src={produto.usdz}
           poster={produto.poster}
-          shadow-intensity='1'
+          shadow-intensity='0'
+          disable-zoom
           camera-controls
-          auto-rotate
-          style={{
-            width: '90%',
-            backgroundColor: '#fff',
-            borderRadius: '8px',
-            border: 'none',
-            color: '#000',
-            fontSize: '14px',
-            padding: '8px 12px',
-            position: 'absolute',
-            top: '16px'
-          }}
           ar
+          style='background-color: transparent; width: 100%; height: 100%;'
+          
           ar-placement={produto.arPlacement || 'floor'}
           alt={produto.nome}
         >
