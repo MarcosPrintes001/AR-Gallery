@@ -39,23 +39,28 @@ model-viewer {
   background-color: transparent;
 
 }
-
 .close-button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 10001;
-  background: #122F3F;
-  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffffcc;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
   font-size: 24px;
-  line-height: 36px;
-  text-align: center;
+  font-weight: bold;
+  color: #122F3F;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 11;
+}
+
+.close-button:hover {
+  background-color: #eee;
 }
 
 .ar-button {
