@@ -1,26 +1,60 @@
-
-
-
 .close-button {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffffcc;
+  z-index: 10001;
+  background: #122F3F;
+  color: white;
   border: none;
   border-radius: 50%;
+  width: 36px;
+  height: 36px;
   font-size: 24px;
-  font-weight: bold;
-  color: #122F3F;
+  line-height: 36px;
+  text-align: center;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-  z-index: 11;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+
 
 .close-button:hover {
   background-color: #eee;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px; /* ajuda a dar espaçamento interno */
+  box-sizing: border-box;
+  overflow: auto; /* para permitir scroll se for menor que o modelo */
+}
+
+.model-viewer-container model-viewer {
+  width: 100%;
+  max-width: 700px; /* ajuste o máximo que quiser */
+  height: 80vh; /* altura relativa à viewport para evitar corte */
+  max-height: 700px; 
+  border-radius: 8px;
+  background: #fff;
+}
+
+model-viewer::part(ar-button) {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
